@@ -1,3 +1,9 @@
+const express = require("express");
+
+const app = express();
+app.use(express.json());
+const data = require("../data.json");
+
 exports.getAllProducts = (req, res) => {
   res.json(data.products);
 };
