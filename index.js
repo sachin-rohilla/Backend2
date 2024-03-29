@@ -5,7 +5,7 @@ const productRoutes = require("./routes/product");
 
 // middleware
 app.use(express.json());
-app.use("/", productRoutes.router);
+app.use("/products", productRoutes.router);
 
 // default routes
 app.get("/", (req, res) => {
