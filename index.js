@@ -18,6 +18,7 @@ app.post("/products", productController.createProduct);
 app.delete("/products/:id", productController.deleteProduct);
 
 app.put("/products/:id", productController.patchProduct);
+
 app.patch("/products/:id", productController.updateProduct);
 
 app.listen(3000, () => {
